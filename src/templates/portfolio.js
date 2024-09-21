@@ -17,7 +17,7 @@ const PortfolioTemplate = ({ data }) => {
 
 export const query = graphql`
 query($id: String!) {
-  wordpressPost(id: { eq: $id }) {
+  wpPost(id: { eq: $id }) {
     title
     content
   }

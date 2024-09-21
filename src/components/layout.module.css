@@ -1,0 +1,20 @@
+/* src/components/layout.module.css */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 1rem;
+  }
+  
