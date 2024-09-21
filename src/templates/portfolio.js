@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const PortfolioTemplate = ({ data }) => {
-  const post = data.wordpressPost
+    const post = data.wpPost
   return (
     <Layout>
       <Seo title={post.title} />
@@ -16,12 +16,12 @@ const PortfolioTemplate = ({ data }) => {
 }
 
 export const query = graphql`
-  query($id: String!) {
-    wordpressPost(id: { eq: $id }) {
-      title
-      content
-    }
+query($id: String!) {
+  wordpressPost(id: { eq: $id }) {
+    title
+    content
   }
+}
 `
 
 export default PortfolioTemplate
